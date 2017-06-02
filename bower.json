@@ -1,0 +1,22 @@
+{
+  "name": "My project is the first",
+  "homepage": "https://github.com/HorusBlack/ProjectOne",
+  "authors": [
+    "HorusBlack <horus.black22@gmail.com>"
+  ],
+  "description": "Is a project of HTML",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
