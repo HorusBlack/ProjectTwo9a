@@ -50,73 +50,61 @@
       </ul>
     </div>
   </div>
-  <div class="container ">
-    <!--Se deben manejar 12 columnas-->
-    <div class="row ">
-      <div class="col-md-4 "></div>
-      <h1>Featured Product</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, iste?</p>
-      <div class="btn-group btn-group-lg ">
-        <button class="btn btn-info ">Buy Now!</button>
-        <button class="btn btn-default ">Free trail</button>
-      </div>
-      <p><a href="# ">Read more about the product</a></p>
-      <div class="col-md-8 visible-md visible-lg ">
-        <img src="img/NyarlathotepAvatar.jpg " alt=" " width="100% ">
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Products</li>
+      </ol>
+    </div>
+    <div class="row">
+      <div class="page-header">
+        <h1>Products.<small>We built amazing stuff.
+        </small></h1>
       </div>
     </div>
-  </div>
-  <!--HR división simple-->
-  <hr/>
-  <div class="container ">
-    <div class="row ">
-      <h3>The company</h3>
-      <div class="col-md-8 ">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet iusto cumque, commodi possimus iste aliquam nihil obcaecati incidunt, error eum ipsa placeat corporis! In assumenda eligendi tempora veritatis, ducimus rem odio est tenetur
-          rerum minus earum nam adipisci repellendus quis iste quisquam ut eum impedit, repellat suscipit pariatur eveniet quasi? Quibusdam consequatur, necessitatibus veritatis officiis voluptas explicabo rem autem?</p>
-      </div>
-      <div class="col-md-4 ">
-        <p class="well well-lg text-center lead ">
-          This is a great company!! I will remember it for the years to come.
-        </p>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <div class="container ">
-    <!--CARRUSEL -->
-    <h3>Testimonials</h3>
-    <ol class="carousel-indicators ">
-      <li data-target="#testimonials " data-slide-to="0 " class="active "></li>
-      <li data-target="#testimonials " data-slide-to="1 "></li>
-      <li data-target="#testimonials " data-slide-to="2 "></li>
-    </ol>
-    <div class="carousel " id="testimonials ">
-      <div class="carousel-inner ">
-        <!--La clase item, oculta los elementos del carusel. La clase active le indica por que elemento
-    va a empezar a mostrarlos-->
-        <div class="item active ">
-          <!--blockquote genera un formato de CITAS -->
-          <blockquote cite=" ">
-            <p>This is testominial 1</p>
-            <small>John Doe</small>
-          </blockquote>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <!--thumbnail,(uña del pulgar), permite crear un rectangulo con pading predeterminado -->
+        <div class="thumbnail"><a href=""><img src="img/doge-doge-simple.jpg" alt=""></a>
+          <!-- clase caption permite agregar dentro del mismo elemento-->
+          <div class="caption">
+            <h4><a href="product-single.html">Product Name</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid unde, aliquam impedit laborum. Earum nam, officia mollitia sequi cupiditate.</p>
+            <!--p>a.btn.btn-primary[role="button"]-->
+            <p><a href="" class="btn btn-primary" role="button">Learn More</a></p>
+          </div>
         </div>
-        <div class="item ">
-          <blockquote cite=" ">
-            <p>This is testominial 2</p>
-            <small>Super Cuate</small>
-          </blockquote>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <!--thumbnail,(uña del pulgar), permite crear un rectangulo con pading predeterminado -->
+        <div class="thumbnail"><a href=""><img src="img/3EC.jpg" alt=""></a>
+          <!-- clase caption permite agregar dentro del mismo elemento-->
+          <div class="caption">
+            <h4><a href="product-single.html">Product Name</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid unde, aliquam impedit laborum. Earum nam, officia mollitia sequi cupiditate.</p>
+            <!--p>a.btn.btn-primary[role="button"]-->
+            <p><a href="" class="btn btn-primary" role="button">Learn More</a></p>
+          </div>
         </div>
-        <div class="item ">
-          <blockquote cite=" ">
-            <p>This is testominial 3</p>
-            <small>Anita la Huerfanita</small>
-          </blockquote>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <!--thumbnail,(uña del pulgar), permite crear un rectangulo con pading predeterminado -->
+        <div class="thumbnail"><a href=""><img src="img/gato.jpg" alt=""></a>
+          <!-- clase caption permite agregar dentro del mismo elemento-->
+          <div class="caption">
+            <h4><a href="product-single.html">Product Name</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid unde, aliquam impedit laborum. Earum nam, officia mollitia sequi cupiditate.</p>
+            <!--p>a.btn.btn-primary[role="button"]-->
+            <p><a href="" class="btn btn-primary" role="button">Learn More</a></p>
+          </div>
         </div>
       </div>
     </div>
+    <hr>
   </div>
+
   <hr>
   <div class="footer features">
     <p class="text-center lead ">Wanna get in touch? Email us at <a href="# "> horus_black@live.com</a></p>
@@ -167,7 +155,6 @@
       </div>
     </div>
   </div>
-
   <script src="bower_components/jquery/dist/jquery.js " charset="utf-8 "></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js " charset="utf-8 "></script>
   <script type="text/javascript ">

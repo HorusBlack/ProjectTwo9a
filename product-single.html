@@ -50,73 +50,89 @@
       </ul>
     </div>
   </div>
-  <div class="container ">
-    <!--Se deben manejar 12 columnas-->
-    <div class="row ">
-      <div class="col-md-4 "></div>
-      <h1>Featured Product</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, iste?</p>
-      <div class="btn-group btn-group-lg ">
-        <button class="btn btn-info ">Buy Now!</button>
-        <button class="btn btn-default ">Free trail</button>
-      </div>
-      <p><a href="# ">Read more about the product</a></p>
-      <div class="col-md-8 visible-md visible-lg ">
-        <img src="img/NyarlathotepAvatar.jpg " alt=" " width="100% ">
-      </div>
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Products</li>
+      </ol>
     </div>
-  </div>
-  <!--HR división simple-->
-  <hr/>
-  <div class="container ">
-    <div class="row ">
-      <h3>The company</h3>
-      <div class="col-md-8 ">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet iusto cumque, commodi possimus iste aliquam nihil obcaecati incidunt, error eum ipsa placeat corporis! In assumenda eligendi tempora veritatis, ducimus rem odio est tenetur
-          rerum minus earum nam adipisci repellendus quis iste quisquam ut eum impedit, repellat suscipit pariatur eveniet quasi? Quibusdam consequatur, necessitatibus veritatis officiis voluptas explicabo rem autem?</p>
+    <div class="row">
+      <div class="page-header">
+        <h1>Products.<small>We built amazing stuff.
+        </small></h1>
       </div>
-      <div class="col-md-4 ">
-        <p class="well well-lg text-center lead ">
-          This is a great company!! I will remember it for the years to come.
-        </p>
-      </div>
+
     </div>
-  </div>
-  <hr>
-  <div class="container ">
-    <!--CARRUSEL -->
-    <h3>Testimonials</h3>
-    <ol class="carousel-indicators ">
-      <li data-target="#testimonials " data-slide-to="0 " class="active "></li>
-      <li data-target="#testimonials " data-slide-to="1 "></li>
-      <li data-target="#testimonials " data-slide-to="2 "></li>
-    </ol>
-    <div class="carousel " id="testimonials ">
-      <div class="carousel-inner ">
-        <!--La clase item, oculta los elementos del carusel. La clase active le indica por que elemento
-    va a empezar a mostrarlos-->
-        <div class="item active ">
-          <!--blockquote genera un formato de CITAS -->
-          <blockquote cite=" ">
-            <p>This is testominial 1</p>
-            <small>John Doe</small>
-          </blockquote>
-        </div>
-        <div class="item ">
-          <blockquote cite=" ">
-            <p>This is testominial 2</p>
-            <small>Super Cuate</small>
-          </blockquote>
-        </div>
-        <div class="item ">
-          <blockquote cite=" ">
-            <p>This is testominial 3</p>
-            <small>Anita la Huerfanita</small>
-          </blockquote>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Product One</h3>
+        <p class="text-muted">This is an awesome product one description</p>
+      </div>
+      <div class="col-md-6">
+        <!-- pull-right manda los objetos a la derecha-->
+        <div class="btn-group pull-right">
+          <!-- btn-lg hace mas grandes los botones-->
+          <button class="btn btn-info btn-lg">Buy Now</button>
+          <button class="btn btn-default btn-lg">Free Tail</button>
         </div>
       </div>
     </div>
+    <br>
+    <div class="row">
+      <!--div#carousel-products.carousel[data-ride="carousel"]-->
+      <!--data-ride="carousel" pertenece a una funcionalidad de boostrap JS-->
+      <div id="carousel-products" class="carousel slide" data-ride="carousel">
+        <!--Indicadores-->
+        <!-- ol.carousel-indicators>li*3 se debe hacer igual al número de elementos del carrusel-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-products" data-slide-to="1"></li>
+          <li data-target="#carousel-products" data-slide-to="2"></li>
+        </ol>
+        <!--carousel-inner agrega imagenes a una carrusel-->
+        <div class="carousel-inner">
+          <!--active permite que se visualisen las imagenes del carousel, pero solo debe tenerla
+        la primera imagen que se va a visualizar-->
+          <div class="item active">
+            <img src="img/37874-mclaren-f1-lm-1920x1080-car-wallpaper.jpg" alt="">
+            <!--carousel-caption > describe la imagen del carrusel con una texto dentro del mismo-->
+            <div class="carousel-caption">
+              <p>Mclaren F1 Super Car</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/p1-2.jpg" alt="">
+            <!--carousel-caption > describe la imagen del carrusel con una texto dentro del mismo-->
+            <div class="carousel-caption">
+              <p>Mclaren P1 Super Car</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/maxresdefault.jpg" alt="">
+            <!--carousel-caption > describe la imagen del carrusel con una texto dentro del mismo-->
+            <div class="carousel-caption">
+              <p>Pagani Zonda Super Car</p>
+            </div>
+          </div>
+        </div>
+        <!--Controles-->
+        <!--carousel-control indica que es un control del carousel-->
+        <!-- data-slide="prev" para deslizar las imagenes del carousel-->
+        <!-- ctrl+shif+/ para comertar rapidamente en atom-->
+        <a href="#carousel-products" class="left carousel-control" role="button" data-slide="prev">
+          <!--span.glyphicon.glyphicon-chevron-left es para poner el icono que permite retroceder-->
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel-products" class="right carousel-control" role="button" data-slide="next">
+          <!--span.glyphicon.glyphicon-chevron-left es para poner el icono que permite retroceder-->
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <hr>
   </div>
+
   <hr>
   <div class="footer features">
     <p class="text-center lead ">Wanna get in touch? Email us at <a href="# "> horus_black@live.com</a></p>
@@ -167,16 +183,8 @@
       </div>
     </div>
   </div>
-
   <script src="bower_components/jquery/dist/jquery.js " charset="utf-8 "></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js " charset="utf-8 "></script>
-  <script type="text/javascript ">
-    $(document).ready(function() {
-      $('.carousel').carousel({
-        interval: 1500
-      });
-    });
-  </script>
 </body>
 
 </html>
