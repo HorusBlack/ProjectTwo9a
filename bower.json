@@ -1,10 +1,10 @@
 {
-  "name": "My project is the first",
-  "homepage": "https://github.com/HorusBlack/ProjectOne",
+  "name": "Chilaquiles",
+  "homepage": "",
   "authors": [
     "HorusBlack <horus.black22@gmail.com>"
   ],
-  "description": "Is a project of HTML",
+  "description": "Practica con Boostrap",
   "main": "index.html",
   "license": "MIT",
   "private": true,
